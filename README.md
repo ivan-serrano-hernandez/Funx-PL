@@ -2,17 +2,13 @@
 
 ---
 
-### Programming Language Project, Q1 2022/23
-
----
-
 Iván Serrano Hernández
 
 `Professor:`  Jordi Petit Silvestre
 
 ---
 
-*Funcx*  is an interpreter for a fictional programming language based on expressions and functions. The input and output of this interpreter is done via a web page.  
+*Funx*  is an interpreter for a fictional programming language build for the Programming Languages course, at Barcelona's Faculty of Computer Science (FIB). *Funx* is mainly based on regular expressions and functions. The input and output of this interpreter is done via a web page.  
 
 To define the grammar and building the interpreter for this language `ANTLR4` has been used, and `flask`  and `jinja2` have been used for the web server.  
 
