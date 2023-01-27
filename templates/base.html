@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title>Funx Compiler</title>
+</head>  
+<body>
+        <div style="display: flex;">
+                <div style="flex: 50%; padding: 10px; background-color: #cdc5c5">
+                        <h1 style="color: rgb(255, 140, 0);">Funcions</h1>
+                        
+                        <ul>
+                            {% for value in historial_procedures %}
+                                <li>{{ value }}</li>
+                            {% endfor %}
+                    </ul>
+
+                        <h1 style="color: rgb(37, 76, 184);">Consola</h1>
+                        <form action="/read" method="post">
+                                <label for="console"></label><br>
+                                <textarea name="console" rows="20" cols="70"></textarea><br>
+                                <input type="submit" value="Enviar">
+                        </form> 
+                              
+                       
+
+                </div>
+                <div style="flex: 50%; padding: 10px; background-color: #b4b3b3">
+                        <h1 style="color: rgb(16, 146, 49);">Resultats</h1>
+                        <ul>
+                                {% for value in lastFive %}
+                                    <li>{{ value }}</li>
+                                    <br>
+                                {% endfor %}
+                        </ul>
+                </div>
+        </div>
+              
+</body>
+
+</html>

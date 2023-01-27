@@ -1,0 +1,13 @@
+Floats {
+    x <- 2.5
+    if x > 0 & x < 2.55 {
+        x <- x/2.5
+    }
+    if x = 1 {
+        x <- 0
+    }
+    x
+} 
+Floats
+
+# The expected output is 0

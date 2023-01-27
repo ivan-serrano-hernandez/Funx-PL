@@ -1,0 +1,15 @@
+Procedure x{ 
+    if x < 10 & x > 0 & false{
+         x <- 1     
+    }     
+    if true & false {
+        x <- 2     
+    } 
+    if !false{ 
+        x <- 3 
+    }     
+    x 
+}
+Procedure 0
+
+# the expected output is 3
